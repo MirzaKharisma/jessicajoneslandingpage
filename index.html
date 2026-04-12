@@ -231,6 +231,109 @@
     }
     .portfolio-item:hover img { transform: scale(1.04); }
 
+    /* ── Tertimonial ── */
+    .testimonials-section {
+      background: #f0ece0;
+      padding: 60px 48px;
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto 48px;
+    }
+
+    .testimonial-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .quote-mark {
+      font-size: 36px;
+      color: #5a4a3a;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .quote-text {
+      font-style: italic;
+      font-size: 15px;
+      color: #3a2e22;
+      line-height: 1.7;
+      margin: 0 0 24px;
+    }
+
+    .author-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: auto;
+    }
+
+    .author-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .author-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: #3a2e22;
+      margin: 0 0 3px;
+    }
+
+    .author-name::before {
+      content: "— ";
+    }
+
+    .author-title {
+      font-size: 12px;
+      color: #6b5e4e;
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .divider-row {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .divider-line {
+      display: inline-block;
+      width: 60px;
+      height: 1.5px;
+      background: #3a2e22;
+    }
+
+    .more-reviews {
+      text-align: center;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      color: #3a2e22;
+      margin: 0;
+    }
+
+    .more-reviews a {
+      color: #c0622a;
+      text-decoration: none;
+    }
+
+    .more-reviews a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     /* ── Who it's for ── */
     .for-section { background: var(--cream); }
     .for-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 50px; }
@@ -308,7 +411,7 @@
     <p class="hero-eyebrow">Brand Identity Designer · 20+ years experience</p>
     <h1>Logos &amp; branding that makes your business <em>impossible to ignore</em></h1>
     <p>I help businesses ready to grow look the part — with clear, polished visual identities that scale from day one.</p>
-    <a href="#pricing" class="btn-primary">See Packages &amp; Pricing</a>
+    <a href="#pricing" class="btn-primary">Start Your Brand Transformation Today</a>
   </div>
   <div class="hero-img">
     <img
@@ -449,6 +552,53 @@
     </div>
   </div>
 </section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonials-section">
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">I'm not exaggerating when I say that consulting with you has been one of the best decisions our school district has ever made.</p>
+        <div class="author-row">
+          <img class="author-avatar" src="https://www.jessicajonesdesign.com/wp-content/uploads/2021/06/CE-joseph-sears.png" alt="Chike Erokwu" />
+          <div>
+            <p class="author-name">Chike Erokwu</p>
+            <p class="author-title">Communications Coordinator, The Joseph Sears School</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">Your design is a key element to our success. Everyday someone comments on how beautiful our packages are.</p>
+        <div class="author-row">
+          <img class="author-avatar" src="https://www.jessicajonesdesign.com/wp-content/uploads/2021/06/PP-Maverick-Chocolate-150x150.png" alt="Paul Picton" />
+          <div>
+            <p class="author-name">Paul Picton</p>
+            <p class="author-title">Founder, Maverick Chocolate</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">Hiring you was the single best investment I have made for my business.</p>
+        <div class="author-row">
+          <img class="author-avatar" src="https://www.jessicajonesdesign.com/wp-content/uploads/2017/02/robert-kaplinsky-1-150x150.jpg" alt="Robert Kaplinsky" />
+          <div>
+            <p class="author-name">Robert Kaplinsky</p>
+            <p class="author-title">Education consultant</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divider-row">
+      <span class="divider-line"></span>
+    </div>
+    <p class="more-reviews">Read <a href="https://www.jessicajonesdesign.com/about-us/client-testimonials/">more reviews</a>.</p>
+  </section>
 
 <!-- WHO IT'S FOR -->
 <section class="for-section">
